@@ -41,6 +41,17 @@ a {
     border-radius: 999px;
 }
 
+.p__large{
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--third-color);
+}
+
+.font--white{
+    font-size: 1.8rem;
+    color: var(--second-color);
+}
+
 /* Header */
 
 header {
@@ -114,7 +125,7 @@ header {
     text-shadow: 1px 0 0 currentColor;
 }
 
-.action-btn,
+.header-action__login,
 .nav-bar__link{
     
     font-size: 1.6rem;
@@ -144,6 +155,57 @@ header {
     
 }
 
-.action-btn{
+.header-action__signup{
     height: 44px;
+    color: var(--second-color);
 }
+
+/* Hero */
+
+.hero{
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 110px;
+}
+
+.hero__content{
+    width: 48%;
+}
+
+.hero__content--title{
+    font-size: 7rem;
+    font-weight: 600;
+    color: var(--second-color);
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.hero__content--info{
+    margin-top: 22px;
+    line-height: 1.67;
+}
+
+.hero__content--action{
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__content--action__btn{
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--second-color);
+    margin-right: 38px;
+}
+
+.hero__media{
+    display: flex;
+    align-items: center;
+}
+
+.hero__media--img1{
+   
+}
+

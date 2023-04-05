@@ -7,6 +7,8 @@
 :root {
     --header-bg: #10375c;
     --primary-color: #2e80ce;
+    --second-color: #fff;
+    --third-color:#C9D2DA;
 }
 
 html {
@@ -30,11 +32,21 @@ a {
     text-decoration: none;
 }
 
+.btn{
+    height: 60px;
+    padding: 15px 45px;
+    display: inline-flex;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 999px;
+}
+
 /* Header */
 
 header {
     min-height: 100vh;
     background: var(--header-bg);
+    padding-top: 30px;
 }
 
 .logo__circle::before,
@@ -83,4 +95,55 @@ header {
 .logo__branch--small {
     font-size: 1.4em;
     font-weight: 300;
+}
+
+/* Header Top */
+
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar__list{
+    display: flex;
+}
+
+.nav-bar__item{
+    position: relative;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.action-btn,
+.nav-bar__link{
+    
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--third-color);
+    padding: 8px 21px;
+}
+
+.nav-bar__link:hover{
+    color: var(--second-color);
+}
+
+.nav-bar__active{
+    color:  #fff;
+}
+
+.nav-bar__active::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    left: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--second-color);
+    
+}
+
+.action-btn{
+    height: 44px;
 }

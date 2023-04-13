@@ -8,7 +8,7 @@
     --header-bg: #10375c;
     --primary-color: #2e80ce;
     --second-color: #fff;
-    --third-color:#C9D2DA;
+    --third-color: #c9d2da;
 }
 
 html {
@@ -32,7 +32,7 @@ a {
     text-decoration: none;
 }
 
-.btn{
+.btn {
     height: 60px;
     padding: 15px 45px;
     display: inline-flex;
@@ -41,29 +41,29 @@ a {
     border-radius: 999px;
 }
 
-.p__large{
+.p__large {
     font-weight: 400;
     font-size: 1.8rem;
     color: var(--third-color);
 }
 
-.font--white{
+.font--white {
     font-size: 1.8rem;
     color: var(--second-color);
 }
 
-.heading{
+.heading {
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2;
     color: var(--header-bg);
 }
 
-.desc{
+.desc {
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #575F66;
+    color: #575f66;
 }
 
 /* Header */
@@ -124,39 +124,38 @@ header {
 
 /* Header Top */
 
-.header-top{
+.header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav-bar__list{
+.nav-bar__list {
     display: flex;
 }
 
-.nav-bar__item{
+.nav-bar__item {
     position: relative;
     text-shadow: 1px 0 0 currentColor;
 }
 
 .header-action__login,
-.nav-bar__link{
-    
+.nav-bar__link {
     font-size: 1.6rem;
     font-weight: 300;
     color: var(--third-color);
     padding: 8px 21px;
 }
 
-.nav-bar__link:hover{
+.nav-bar__link:hover {
     color: var(--second-color);
 }
 
-.nav-bar__active{
-    color:  #fff;
+.nav-bar__active {
+    color: #fff;
 }
 
-.nav-bar__active::before{
+.nav-bar__active::before {
     content: "";
     position: absolute;
     display: inline-block;
@@ -166,17 +165,16 @@ header {
     height: 6px;
     border-radius: 50%;
     background: var(--second-color);
-    
 }
 
-.header-action__signup{
+.header-action__signup {
     height: 44px;
     color: var(--second-color);
 }
 
 /* Hero */
 
-.hero{
+.hero {
     margin-top: 76px;
     display: flex;
     justify-content: space-between;
@@ -184,11 +182,11 @@ header {
     padding-bottom: 110px;
 }
 
-.hero__content{
+.hero__content {
     width: 45%;
 }
 
-.hero__content--title{
+.hero__content--title {
     font-size: 7rem;
     font-weight: 600;
     color: var(--second-color);
@@ -196,83 +194,114 @@ header {
     letter-spacing: -0.02em;
 }
 
-.hero__content--info{
+.hero__content--info {
     margin-top: 22px;
-    
+
     line-height: 1.67;
 }
 
-.hero__content--action{
+.hero__content--action {
     display: flex;
     align-items: center;
     margin-top: 38px;
 }
 
-.hero__content--action__btn{
+.hero__content--action__btn {
     font-weight: 400;
     font-size: 1.8rem;
     color: var(--second-color);
     margin-right: 38px;
 }
 
-.hero__images{
+.hero__images {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.hero__img:first-child{
+.hero__img:first-child {
     position: relative;
     margin-right: -6px;
 }
 
 /* Service */
 
-.service{
-    padding: 170px 135px;
-    background: #E5E5E5;
+.service {
+    margin: 170px 0;
 }
 
-.service__heading{
-text-align: center;
+.service__heading--title,
+.service__desc {
+    text-align: center;
 }
 
-.service__desc{
+.service__desc {
+    margin-top: 18px;
     width: 468px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 18px;
 }
 
-.service__body{
+.service__row {
     margin-top: 70px;
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
+    gap: 130px;
 }
 
-
-
-.service__img{
+.service__img {
     width: 570px;
-    height: 570px;
+    height: 507px;
     border-radius: 12px;
     object-fit: cover;
 }
 
-
-
-.service__item{
+.service__list {
     display: flex;
-    justify-content: center;
-    flex-grow: 1;
+    margin-bottom: 41px;
+    border-radius: 10px;
 }
 
-.service__item--circle{
-    content: "";
-    display: block;
+.service__list:hover {
+    background: #ffffff;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+}
+
+.service__list:hover .service__item--wrap {
+    background: var(--primary-color);
+    color: var(--second-color);
+}
+
+.service__item--wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 60px;
     height: 60px;
-    background: orange;
+    border-radius: 50%;
+    background: #eff6fd;
+    align-items: center;
+    justify-content: center;
+    color: #10375c;
+    flex-shrink: 0;
 }
 
+.service__info {
+    margin-left: 19px;
+}
+
+.service__list--title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    color: #10375c;
+}
+
+.service__list--desc {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #575f66;
+}

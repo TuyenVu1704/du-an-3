@@ -66,6 +66,28 @@ a {
     color: #575f66;
 }
 
+.cta__btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    outline: none;
+    background: #ffffff;
+    color: #575f66;
+    transition: 0.25s;
+}
+
+.cta__btn:hover {
+    background: #2e80ce;
+    border-color: #2e80ce;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.arrow {
+    rotate: 180deg;
+}
+
 /* Header */
 
 header {
@@ -167,7 +189,7 @@ header {
     background: var(--second-color);
 }
 
-.header-action__signup {
+.header-action__sign-up {
     height: 44px;
     color: var(--second-color);
 }
@@ -426,6 +448,19 @@ header {
     column-gap: 30px;
 }
 
+.member-list__item {
+    transition: 0.25s;
+}
+
+.member-list__item:hover {
+    transform: translateY(-16px);
+    cursor: pointer;
+}
+
+.member-list__item:hover .member__item--thumb {
+    background: #2e80ce;
+}
+
 .member__item--thumb {
     padding-top: 28px;
     background: #eaf6ff;
@@ -448,4 +483,66 @@ header {
     font-size: 1.4rem;
     line-height: 1.86;
     color: #575f66;
+}
+
+.member__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+    margin-top: 38px;
+}
+
+.app {
+    padding-top: 180px;
+    padding-bottom: 85px;
+}
+
+.app__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+
+    background: #2e80ce;
+}
+
+.app__img {
+    margin-top: -95px;
+    display: block;
+}
+
+.app__info {
+    width: 586px;
+}
+
+.app--heading,
+.app--desc {
+    color: #ffffff;
+}
+
+.app--heading {
+    max-width: 489px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+.app--desc {
+    margin-top: 18px;
+}
+
+.app__social {
+    display: flex;
+    gap: 28px;
+    margin-top: 38px;
+}
+
+.app__btn {
+    background: none;
+    border: none;
+}
+
+.app__btn:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
 }
